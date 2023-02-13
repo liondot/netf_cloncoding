@@ -1,0 +1,27 @@
+.row {
+    position: relative;    
+}
+
+.iconLeft,
+.iconRight {
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    font-size: 50px;
+    color: #232323;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    opacity: .5;
+    background-color: #fff;
+    transition: all .2s ease-in;
+    z-index: 5;
+    cursor: pointer;
+}
+.iconLeft:hover,
+.iconRight:hover {
+    opacity: 1;
+} 
+.iconRight {
+    right: 0;
+}
