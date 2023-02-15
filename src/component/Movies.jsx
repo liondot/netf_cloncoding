@@ -1,9 +1,10 @@
 import { BiMoviePlay } from "react-icons/bi";
-import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
-import { useState } from "react";
+// import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
+// import { useState } from "react";
+import '../style/movies.scss'
 
 function Movies({ item, id }) {
-  const [like, setLike] = useState([]);
+  // const [like, setLike] = useState([]);
 
   const titleString = (str, num) => {
     if (str?.length > num) {
@@ -13,11 +14,14 @@ function Movies({ item, id }) {
     }
   };
 
+ 
+
+
   return (
-    <div>
+    <div className="movies">
       <div
         key={id}
-        className="w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2 "
+        className="inner w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2 "
       >
         <img
           src={`https://image.tmdb.org/t/p/w500/${item?.backdrop_path}`}
@@ -29,13 +33,12 @@ function Movies({ item, id }) {
             {titleString(item?.title, 30)}
           </p>
           <p>
-            {like}
-            <AiFillHeart />
+            {/* {like ? <AiFillHeart className="f" /> : <AiOutlineHeart className=""/>} */}
           </p>
         </div>
       </div>
     </div>
   );
-}
+} 
 
 export default Movies;
