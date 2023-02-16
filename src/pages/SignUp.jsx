@@ -34,9 +34,10 @@ function SignUp() {
             <h1 className="text-3xl font-bod">Sign Up</h1>
             <form onSubmit={handleSubmit} action="" className="w-full flex flex-col py-4">
               <input onChange={(e) => setEmail(e.target.value)} type="email" className="p-3 my-2 bg-gray-700 rounded" placeholder="Email"/>
-              <input onChange={(e) => setPassword(e.target.value)} type="password" className="p-3 my-2 bg=gray=700 rounded"
+              <input onChange={(e) => setPassword(e.target.value)} type="password" className="p-3 my-2 bg=gray=700 rounded text-black"
                 placeholder="password"
                 autoComplete="current-password"
+    
               />
               <button className="bg-red-600 py-3 my-6 rounded font-bold">
                 Sign Up

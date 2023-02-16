@@ -23,7 +23,7 @@ const Row = ({ title, fetchURL, rowID }) => {
 
 
   return (
-    <div className="row bg-gray-800">
+    <div className="row bg-black/90">
       <h2 className="text-white font-bold md:text-xl p-4">{title}</h2>
       <div className="relative flex items-center group">
         <BiChevronLeftCircle

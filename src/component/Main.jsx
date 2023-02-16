@@ -24,15 +24,15 @@ function Main() {
 
   return (
     <div className="main">
-      <div className="inner">
-        <div className="mainGradient"></div>
+      <div className="inner bg-black/75 ">
+        <div className="mainGradient bg-black/75"></div>
         <img
           className="w-full h-full object-cover"
           src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`}
           alt="movie?.title"
         />
         <div className="movieDesc md:p-8">
-            <h1 className="text-3xl md:text-5xl font-bold">{movie?.title}</h1>
+            <h1 className="text-5xl md:text-5xl font-bold">{movie?.title}</h1>
           <div className="my-4">
             <button className="border bg-gray-300 text-black border-gray-300 py-2 px-5">
               Play

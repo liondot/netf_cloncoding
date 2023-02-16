@@ -39,9 +39,10 @@ function LogIn() {
             {error ? <p className="p-3 bg-red-400 my-3">{error}</p> : null}
             <form onSubmit={handleSubmit} action="" className="w-full flex flex-col py-4">
               <input onChange={(e) => setEmail(e.target.value)} type="email" className="p-3 my-2 bg-gray-700 rounded" placeholder="Email"/>
-              <input onChange={(e) => setPassword(e.target.value)} type="password" className="p-3 my-2 bg=gray=700 rounded"
+              <input onChange={(e) => setPassword(e.target.value)} type="password" className="p-3 my-2 bg=gray=700 rounded text-black"
                 placeholder="password"
                 autoComplete="current-password"
+                required
               />
               <button className="bg-red-600 py-3 my-6 rounded font-bold">
                 Sign In
