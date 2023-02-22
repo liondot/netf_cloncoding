@@ -6,6 +6,7 @@ import Account from './pages/Account'
 import LogIn from "./pages/LogIn";
 import SignUp from "./pages/SignUp";
 import ProtectRoute from "./component/ProtectRoute";
+import './style/app.scss'
 
 function App() {
   return (

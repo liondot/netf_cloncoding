@@ -1,31 +1,24 @@
+
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
-
-
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
 // Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAsUtcQ0GZf4WhlDvI6zWB6_Td_SgrpDu0",
-  authDomain: "netflex-clone-5f447.firebaseapp.com",
-  projectId: "netflex-clone-5f447",
-  storageBucket: "netflex-clone-5f447.appspot.com",
-  messagingSenderId: "748599155436",
-  appId: "1:748599155436:web:65ff8d36828a2f8ba7a3c9",
-  measurementId: "G-VV9153MDSB"
+  apiKey: "AIzaSyAb3sQLDePcandPGiBv_GgsQLLdagc3Ez4",
+  authDomain: "react-netflex-clone-1c2a4.firebaseapp.com",
+  projectId: "react-netflex-clone-1c2a4",
+  storageBucket: "react-netflex-clone-1c2a4.appspot.com",
+  messagingSenderId: "327944748930",
+  appId: "1:327944748930:web:e6004cab178b988f1a599b"
 };
+
 
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
-export const analytics = getAnalytics(app);
 export const auth = getAuth(app);
-export const db = getFirestore(app);
-
-
+export const db = getFirestore(app)
