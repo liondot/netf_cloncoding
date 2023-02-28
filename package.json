@@ -47,6 +47,5 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.2.6"
-  },
-  "homepage": "https://liondot.github.io/netflex_react"
+  }
 }
